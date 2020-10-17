@@ -1,0 +1,67 @@
+.team_page__about {
+    margin-inline-start: -40px;
+}
+
+.team_page__about__navigation__lists__about__photo {
+    width: 100%;
+    height: auto;
+}
+
+.team_page__about__navigation__lists__about__name {
+    line-height: 21px;
+}
+
+.team_page__about__navigation__lists__about__job {
+    margin: auto;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-block-start: -14px;
+    font-size: 10px;
+    line-height: 13px;
+    max-width: 100%;
+}
+
+.photo1 {
+    margin-inline-end: -87px;
+}
+
+.photo2 {
+    margin-inline-end: -72px;
+}
+
+.photo3 {
+    margin-inline-end: -55px;
+}
+
+.photo4 {
+    margin-inline-end: -66px;
+}
+
+.photo5 ,
+.photo6 {
+    margin-inline-end: -60px;
+}
+
+.team_page__about__navigation__lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+}
+
+.team_page__about__navigation__lists__about:nth-of-type(2),
+.team_page__about__navigation__lists__about:nth-of-type(4), 
+.team_page__about__navigation__lists__about:nth-of-type(6) {
+    padding-block-start: 50px;
+}
+
+
+.team_page__about__navigation__lists__about__name,
+.team_page__article__description {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.team_page__article__description {
+    padding-block-end: 50px;
+}

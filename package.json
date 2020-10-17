@@ -1,0 +1,21 @@
+{
+  "name": "my-team-page",
+  "version": "1.0.0",
+  "description": "![screenshot](screenshot.png)",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass scss -o css",
+    "scss:watch": "npm run scss && node-sass scss -w -o css",
+    "start": "npm run scss:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsipoy/my-team-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsipoy/my-team-page/issues"
+  },
+  "homepage": "https://github.com/tsipoy/my-team-page#readme"
+}

@@ -1,0 +1,53 @@
+$font-faces: (
+    (
+        name: "Poppins Bold",
+        system-name: "Poppins-Bold",
+        style: bold,
+        family: "Poppins",
+        weight: 600,
+        filename: "poppins-bold",
+    ),
+    (
+        name: "Poppins Regular",
+        system-name: "Poppins-Regular",
+        style: normal,
+        family: "Poppins",
+        weight: 400,
+        filename: "poppins-regular",
+    ),
+    (
+        name: "Poppins Black",
+        system-name: "Poppins-Black",
+        style: normal,
+        family: "Poppins",
+        weight: 400,
+        filename: "poppins-black",
+    ),
+    (
+        name: "PT Serif Regular",
+        system-name: "PT-Serif-Regular",
+        style: normal,
+        family: "PT Serif",
+        weight: 400,
+        filename: "pt-serif-regular",
+    ),
+    (
+        name: "PT Serif Bold",
+        system-name: "PT-Serif-Bold",
+        style: normal,
+        family: "PT Serif",
+        weight: 600,
+        filename: "pt-serif-bold",
+    )
+);
+
+@each $font in $font-faces {
+    @font-face {
+        font-family: map-get($font, family);
+        font-weight: map-get($font, weight);
+        font-style: map-get($font, style);
+        src: local(map-get($font, name)), local(map-get($font, system-name)),
+            url("./fonts/#{map-get($font, filename)}.woff2") formt("woff2"),
+            url("./fonts/#{map-get($font, filename)}.woff") format("woff");
+    }
+}
