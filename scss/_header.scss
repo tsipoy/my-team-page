@@ -3,10 +3,27 @@
     font-size: 36px;
     line-height: 48px;
     letter-spacing: -0.045em;
+    max-width: 278px;
+}
+
+.team_page__article {
+    max-width: 439px;
+    padding-block-start: 10px;
 }
 
 .team_page__article__heading {
     font-size: 18px;
     line-height: 27px;
     text-transform: uppercase;
+}
+
+@media(min-width: 800px) {
+    .team_page {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 800px;
+        padding-block-start: 50px;
+    }    
 }

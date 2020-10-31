@@ -1,4 +1,10 @@
 .team_page__about {
+    margin: auto;
+    max-width: 800px;
+    padding-block-end: 50px;
+}
+
+.team_page__about__navigation {
     margin-inline-start: -40px;
 }
 
@@ -64,4 +70,19 @@
 
 .team_page__article__description {
     padding-block-end: 50px;
+}
+
+@media(min-width: 800px) {
+    .team_page__about__navigation__lists {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 70px;
+    }
+
+    .team_page__about__navigation__lists__about:nth-of-type(5) {
+        padding-block-start: 146px;
+    }
+
+    .team_page__about__navigation__lists__about__job {
+        margin-block-start: -22px;    
+    }
 }
